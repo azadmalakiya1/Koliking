@@ -350,7 +350,7 @@ async def get_msg(userbot, sender, edit_id, msg_link, i, message):
             if chat in saved_channel_ids:
                 await app.edit_message_text(
                     message.chat.id, edit_id,
-                    "This channel is protected by **__CHOSEN ONE ⚝__💀**.\Kya Be... Hamara Hi Content Nikalega 🌝 Kahi Or Try Kar 😘"
+                    "This channel is protected By **__ᴛᴇᴀᴍ  ꫝຮ 亗__💀**.\Kya Be... Hamara Hi Content Nikalega 🌝 Kahi Or Try Kar 😘"
                 )
                 return
             
@@ -520,10 +520,10 @@ async def get_final_caption(msg, sender):
     final_caption = f"{original_caption}\n\n{custom_caption}" if custom_caption else original_caption
 
     # Replace @mentions with @Real_Pirates
-    final_caption = re.sub(r'@\w+', '@II_LevelUP_II', final_caption)
+    final_caption = re.sub(r'@\w+', '@TEAM_A_S_BOT', final_caption)
 
     # Replace all links with your channel link
-    final_caption = re.sub(r'https?://\S+|www\.\S+', 'https://t.me/II_Way_to_Success_II', final_caption)
+    final_caption = re.sub(r'https?://\S+|www\.\S+', 'https://t.me/+pZZQnMwRZR8yMTZl', final_caption)
 
     # Perform additional replacements from user-defined rules
     replacements = load_replacement_words(sender)
@@ -873,7 +873,7 @@ async def send_settings_message(chat_id, user_id):
         [Button.inline("🖼️ Set Thumbnail", b'setthumb'), Button.inline("🧲 Remove Thumbnail", b'remthumb')],
         [Button.inline("📤 Upload Method", b'uploadmethod'), Button.inline("⛔ Logout", b'logout')],
         [Button.inline("♻️ Reset All Settings ☢️", b'reset')],
-        [Button.url("💞 Contact Owner 🦋", "https://t.me/Chosen_Onex_bot")]
+        [Button.url("💞 Contact Owner 🦋", "https://t.me/TEAM_A_S_BOT")]
     ]
     
     await gf.send_file(
@@ -1252,7 +1252,7 @@ async def rename_file(file, sender, caption=None):
     base_name = os.path.basename(base_name)
 
     # Apply text transformations
-    base_name = re.sub(r'@\w+', '@Chosen_Onex', base_name)  # Replace mentions
+    base_name = re.sub(r'@\w+', '@TEAM_A_S_BOT', base_name)  # Replace mentions
     for word in delete_words:
         base_name = base_name.replace(word, "")  # Remove banned words
     for word, replace_word in replacements.items():
