@@ -736,7 +736,7 @@ def format_caption(original_caption, sender, custom_caption):
     original_caption = re.sub(r'#\S+', '', original_caption)
 
     # ✅ Replace @mentions
-    original_caption = re.sub(r'@\w+', '@Chosen_Onex', original_caption)
+    original_caption = re.sub(r'@\w+', 'ᴛᴇᴀᴍ ꫝຮ 亗', original_caption)
 
     # ✅ Replace telegram links
     original_caption = re.sub(
@@ -748,7 +748,7 @@ def format_caption(original_caption, sender, custom_caption):
     # ✅ Replace "Extracted By" with custom credit    
     original_caption = re.sub(
         r'(📩)?\s*(Extracted[\s_]*By)\s*[:➤>–\-]*\s*.*',
-        r'❉ Sᴛꪮʟᴇɴ Hᴀᴘᴘɪɴᴇss',
+        r'ᴛᴇᴀᴍ ꫝຮ 亗',
         original_caption,
         flags=re.IGNORECASE
     )
@@ -941,7 +941,7 @@ async def callback_query_handler(event):
 
         # Display the buttons for selecting the upload method
         buttons = [
-            [Button.inline(f"II_LevelUP_II v1 ⚡{pyrogram_check}", b'pyrogram')],
+            [Button.inline(f"ᴛᴇᴀᴍ  ꫝຮ 亗 ⚡{pyrogram_check}", b'pyrogram')],
             [Button.inline(f"⚠️ Coming soon V2 {telethon_check}", b'telethon')]
         ]
         await event.edit("Choose your preferred upload method:\n\n__**Note:** **ᴛᴇᴀᴍ ꫝຮ 亗 v2 ⚡**, built on Telethon(base), by @TEAM_A_S_BOT still in beta.__", buttons=buttons)
