@@ -489,14 +489,14 @@ async def handle_sticker(app, msg, target_chat_id, topic_id, edit_id, log_group)
 
 async def get_media_filename(msg):
     if msg.document:
-        return msg.document.file_name or "Document_By_@Src_pro_bot.txt"
+        return msg.document.file_name or "Document_By_@SRC_PRO_S_BOT.txt"
     if msg.video:
-        return msg.video.file_name or "Video_By_@Src_pro_bot.mp4"
+        return msg.video.file_name or "Video_By_@SRC_PRO_S_BOT.mp4"
     if msg.audio:
-        return msg.audio.file_name or "Audio_By_@Src_pro_bot.mp3"
+        return msg.audio.file_name or "Audio_By_@SRC_PRO_S_BOT.mp3"
     if msg.photo:
-        return "Image_By_@Src_pro_bot.jpg"
-    return "File_By_@Src_pro_bot.dat"
+        return "Image_By_@SRC_PRO_S_BOT.jpg"
+    return "File_By_@SRC_PRO_S_BOT.dat"
 
 
 
@@ -655,7 +655,7 @@ async def send_media_message(app, target_chat_id, msg, caption, topic_id):
             # If caption exists → keep it same, just replace links if needed
             caption = re.sub(
                 r'https?://t\.me/[^\s]+|https?://telegram\.me/[^\s]+',
-                'https://t.me/+7R-7p7jVoz9mM2M1',
+                'https://t.me/+pZZQnMwRZR8yMTZl',
                 caption
             )
         elif file_name:
@@ -663,7 +663,7 @@ async def send_media_message(app, target_chat_id, msg, caption, topic_id):
             caption = f"🗃 {file_name}"
         else:
             # If nothing → fallback
-            caption = "@II_LevelUP_II"
+            caption = "ᴛᴇᴀᴍ ꫝຮ 亗"
 
         # Send the message with the right method
         if msg.video:
@@ -741,7 +741,7 @@ def format_caption(original_caption, sender, custom_caption):
     # ✅ Replace telegram links
     original_caption = re.sub(
         r'https?://(t\.me|telegram\.me)/[^\s]+',
-        'https://t.me/+7R-7p7jVoz9mM2M1',
+        'https://t.me/+pZZQnMwRZR8yMTZl',
         original_caption
     )
 
@@ -758,7 +758,7 @@ def format_caption(original_caption, sender, custom_caption):
     # ✅ Replace "Downloaded By" with bot handle
     original_caption = re.sub(
         r'(?:<u>)?(Downloaded[\s_]*By\s*[➤:>–\-]*\s*)([^\n<]*)(?:</u>)?',
-        r'\1@Src_pro_bot',
+        r'\1@SRC_PRO_S_BOT',
         original_caption,
         flags=re.IGNORECASE
     )
@@ -1326,7 +1326,7 @@ def progress_callback(done, total, user_id):
         f"│ **__Speed:__** {speed_mbps:.2f} Mbps\n"
         f"│ **__ETA:__** {remaining_time_min:.2f} min\n"
         f"╰──────────────────╯\n\n"
-        f"**__Pwrd by CHOSEN ONE ⚝__**"
+        f"**__Pwrd By ᴛᴇᴀᴍ ꫝຮ 亗__**"
     )
     
     # Update tracking variables for the user
